@@ -10,6 +10,13 @@
     <style>
         body {
             font-family: monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
         .wrapper {
@@ -17,28 +24,35 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
         }
 
         #calendar {
-            margin: 0 auto;
             font-size: 14px;
+            width: 100%;
+            max-width: 300px; /* Ajuste cette valeur selon tes besoins */
+            margin: auto;
+            box-sizing: border-box;
         }
         
         table {
             border-collapse: collapse;
             table-layout: fixed;
-            position: absolute;
+            width: 100%;
             background-color: #fff;
             border: 2px solid #000000;
             box-shadow: 2px 2px 1px 0px #000000;
             border-radius: 5px;
+            box-sizing: border-box;
         }
 
         .month {
             background-color: #380541; /* Couleur modifiée */
             color: #fff;
             font-size: 1.5em;
+            padding: 10px;
         }
 
         .year {
@@ -56,6 +70,8 @@
         td, th {
             text-align: center;
             background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         th {
@@ -119,8 +135,8 @@
     </div>
     <script>
         var months = [
-            'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',
-            'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'
+            'Janvier', 'F&eacute;vrier', 'Mars', 'Avril', 'Mai', 'Juin',
+            'Juillet', 'Ao&ucirc;t', 'Septembre', 'Octobre', 'Novembre', 'D&eacute;cembre'
         ];
 
         var days = [
